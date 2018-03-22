@@ -1,0 +1,119 @@
+//
+// Prefix header for all source files of the 'MyCalendar' target in the 'MyCalendar' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+
+	#import "Connectivity.h"
+	#import "MyNavigationBar.h"
+	#import "MyLog.h"
+
+	#define DEBUG			0
+	#define INFO			1
+	#define WARNNING		2
+	#define ERROR			3
+	#define FATAL			4
+	#define DEFAULTLEVEL	INFO
+	#define DoLog(level,formatstring,...) [MyLog doLog:level filename:__FILE__ funcname:(char *)__FUNCTION__ line:__LINE__ format:formatstring,##__VA_ARGS__,nil]
+
+
+
+	#define FIRSTTIME		@"chtPimCalendarInstall"	
+	#define PIMDATABASE		@"userCalendar.sqlite"		/*資料庫名稱*/
+	#define CHTSERVICE		@"chtPimCalendarService"	
+	#define SERVICEID		@"chtPimCalendarServiceId"
+	#define AUTHID			@"chtPimCalendarAuthId"
+	#define EVENTNOTIFY		@"chtPimCalendarNotification"
+	#define KEEPRULE		@"chtPimCalendarKeepRule"
+	#define SYNCRULE		@"chtPimCalendarSyncRule"
+	#define AUTORULE		@"chtPimCalendarAutoRule"
+	#define AUTOSYNCFLAG		@"chtPimCalendarAutoSync"
+	#define BACKUPRUNNING	@"chtPimCalendarBackup"
+	#define RESTORERUNNING	@"chtPimCalendarRestore"
+	#define RESTORESYNCFLAG @"chtPimCalendarRestoreFlag"
+	#define SESSIONID		@"chtPimCalendarSessionId"
+	#define USERID			@"chtPimCalendarUserId"
+	#define PASSWD			@"chtPimCalendarPassWd"
+	#define MAXSYNCAMOUNT	@"chtPimCalendarSyncAmount"
+	#define REDIRECTFLAG	@"chtPimCalendarRedirect"
+	#define BACKGROUNDIMG   @"calendar_monthly_bg.png"
+
+	#define SERVICETYPE		@"CAL"
+	#define INTERFACEVERSION	@"1.000"
+	//#define APPVERSION		[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]
+
+	#define TAIPEITIMEZONE	28800
+	#define AUTOSYNCSECS	60
+	#define DEFAULTMAXSYNC	10
+
+	
+	#define SYNCINITURL		@"http://202.39.164.21:80/SyncInit" 
+	#define FOLDERSYNCURL	@"http://202.39.164.21:80/FolderSync"
+	#define CONTENTSYNCURL	@"http://202.39.164.21:80/ContentSync"
+	#define RECURRENCESYNCURL	@"http://202.39.164.21:80/RecurrenceSync"
+	#define BACKUPURL		@"http://202.39.164.21:80/CalendarBackup"
+	#define BACKUPLISTURL	@"http://202.39.164.21:80/CalendarBackupList"
+	#define RESTOREURL		@"http://202.39.164.21:80/CalendarRestore"
+	#define RESTORELISTURL	@"http://202.39.164.21:80/CalendarRestoreList"
+	
+	#define PROVISIONURL	@"http://202.39.164.21:80/DeviceProvision"
+	#define LOGINURL		@"https://202.39.164.21:443/AuthLogin"
+	#define VERSIONURL		@"http://202.39.164.21:80/VersionInfo"
+	#define GLOBALNOTIFYURL @"http://"
+	#define DEVICETOKENURL  @"http://"
+	#define FEEDBACKNOTIFYURL @"http://"
+	#define APPLYURL		@"http://"
+	
+	
+	
+	/*
+	#define SYNCINITURL		@"http://10.144.123.95:8080/SyncInit" 
+	#define FOLDERSYNCURL	@"http://10.144.123.95:8080/FolderSync"
+	#define CONTENTSYNCURL	@"http://10.144.123.95:8080/ContentSync"
+	#define RECURRENCESYNCURL	@"http://10.144.123.95:8080/RecurrenceSync"
+	#define BACKUPURL		@"http://10.144.123.95:8080/CalendarBackup"
+	#define BACKUPLISTURL	@"http://10.144.123.95:8080/CalendarBackupList"
+	#define RESTOREURL		@"http://10.144.123.95:8080/CalendarRestore"
+	#define RESTORELISTURL	@"http://10.144.123.95:8080/CalendarRestoreList"
+
+	#define PROVISIONURL	@"http://10.144.123.95:8080/DeviceProvision"
+	#define LOGINURL		@"http://10.144.123.95:8080/AuthLogin"
+	//#define LOGINURL		@"https://10.144.123.95:5554/AuthLogin"
+	#define VERSIONURL		@"http://10.144.123.95:8080/VersionInfo"
+	#define GLOBALNOTIFYURL @"http://"
+	#define DEVICETOKENURL  @"http://"
+	#define FEEDBACKNOTIFYURL @"http://"
+	#define APPLYURL		@"http://"
+	*/
+	
+
+	#define RP_SUCC         0    /*成功*/
+	#define RP_POLICY       1    /*衝突*/
+	#define RP_TMP_ERR      2    /*暫時失敗*/
+	#define RP_PERM_ERR     3    /*失敗*/
+	//#define REDOMAXCOUNT	30
+	#define REDOMAXDAYS		365
+
+	#define MAXSUBJECT		30
+	#define MAXLOCATION		30
+	#define MAXMEMO			100
+	#define MAXMEMOROW		4
+	#define MAXFOLDERNAME	30
+	#define MAXFOLDERSIZE	99
+
+	//#define RECURRENCEID	@"0";
+
+typedef enum  {
+	S0,
+	S1
+} STATE;
+
+#define Y_TOLERANCE 20
+#define X_TOLERANCE 100
+
+#endif
+
+
+

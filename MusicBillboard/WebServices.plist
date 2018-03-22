@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>http://musicphone.emome.net/MAS/DoTask?Task=iRecommendSong&amp;xsl=pcIni.xsl</string>
+	<string>http://musicphone.emome.net/MAS/DoTask?Task=iRecommendAlbum&amp;xsl=pcIni.xsl</string>
+	<string>http://musicphone.emome.net/MAS/DoTask?Task=RecommendMusicBox&amp;xsl=pcIni.xsl</string>
+	<string>http://musicphone.emome.net/MAS/DoTask?Task=iRank&amp;xsl=pcIni.xsl&amp;categoryid=000</string>
+	<string>http://musicphone.emome.net/MAS/DoTask?Task=iRank&amp;xsl=pcIni.xsl&amp;categoryid=810</string>
+	<string>http://musicphone.emome.net/MAS/DoTask?Task=iRank&amp;xsl=pcIni.xsl&amp;categoryid=811</string>
+	<string>http://musicphone.emome.net/MAS/DoTask?Task=iRank&amp;xsl=pcIni.xsl&amp;categoryid=809</string>
+	<string>http://musicphone.emome.net/MAS/DoTask?Task=iRank&amp;xsl=pcIni.xsl&amp;categoryid=808</string>
+	<string>http://musicphone.emome.net/MAS/DoTask?Task=iRank&amp;xsl=pcIni.xsl&amp;categoryid=812</string>
+	<string>http://musicphone.emome.net/MAS/DoTask?Task=iRank&amp;xsl=pcIni.xsl&amp;categoryid=813</string>
+	<string>http://musicphone.emome.net/MAS/DoTask?Task=iRank&amp;xsl=pcIni.xsl&amp;categoryid=814</string>
+	<string>http://musicphone.emome.net/MAS/DoTask?Task=iActivity&amp;xsl=pcIni.xsl</string>
+	<string>http://musicphone.emome.net/MAS/DoTask?Task=iSearchManagement&amp;xsl=pcIni.xsl</string>
+	<string>http://musicphone.emome.net/MAS/DoTask?Task=iTopicSearch&amp;xsl=pcIni.xsl&amp;topicid=&amp;pagesize=10&amp;pagecount=1</string>
+	<string>http://musicphone.emome.net/MAS/DoTask?Task=VIP_Profile&amp;xsl=pcIni.xsl</string>
+</array>
+</plist>
